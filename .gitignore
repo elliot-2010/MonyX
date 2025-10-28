@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Django
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static_root/
+.env
+*.env
+*.secret
+local_settings.py
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+pip-wheel-metadata/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Node/npm (if used for frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Coverage/test
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Migrations (optional)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# Others
+*.bak
+*.swp
+*.tmp
+

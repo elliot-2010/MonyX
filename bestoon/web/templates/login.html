@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>ورود با توکن | MonyX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1d;
+      --text: #e0e0e0;
+      --primary: #00c3ff;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-box {
+      background-color: var(--surface);
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: 0 0 20px rgba(0, 195, 255, 0.1);
+      width: 360px;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: var(--radius);
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary);
+      color: #000;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00a8d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>ورود با توکن</h2>
+    <form method="get" action="/q/generalstat">
+      <label for="token">توکن شما:</label>
+      <input type="text" name="token" required>
+      <button type="submit">مشاهده آمار</button>
+    </form>
+  </div>
+</body>
+</html>
